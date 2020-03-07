@@ -1,4 +1,11 @@
 // Header, footer, navigation, section 
+body main ul li:before {
+  display: none;
+}
+.interior-page main {
+  padding-top: 10.5rem !important;
+}
+
 .hero {
   background: rgba(17, 100, 243, 0.05);
   padding: 60px 0;
@@ -93,11 +100,15 @@
     text-align: center;
     margin: 0 0 4rem;
   }
+  &__mobileBreak {
+    display: none;
+  }
   &__unorderedList {
     margin-top: 4rem;
   }
   &__listItem {
-    list-style-image: url(../img/check.svg);
+    list-style-image: url(https://www.web.com/content/dam/webdotcom/mobile-security/check.svg);
+    padding-left: 1rem;
   }
   &__listHeader {
     color: #000000;
@@ -105,6 +116,7 @@
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 600;
+    margin-bottom: 1rem;
   }
   &__listText {
     color: #000000;
@@ -175,9 +187,10 @@
     font-size: 1.3rem;
     line-height: 1.5rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     &--bold {
       font-weight: 600;
+      margin-bottom: 2rem;
     }
   }
   &__cta {
@@ -218,10 +231,92 @@
       }
     }
   }
+  &__modal {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: auto;
+    padding: 1.4rem;
+    top: 10%;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    position: relative;
+  }
+  &__modalClose {
+    float:right;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      opacity: .5;
+      transition: .5s;
+    }
+  }
+  &__modalHeader {
+    color: #1164F3;
+    font-family: 'Domine', Times, serif;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  &__modalTwoColumns {
+    display: flex;
+    padding: 0 6rem 4rem;
+    justify-content: space-between;
+  }
+  &__modalSingleColumn {
+    width: 28rem;
+  }
+  &__modalSubHeader {
+    color: #404040;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  &__modalText {
+    color: #404040;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #A7A7A7;
+    padding-bottom: 1rem;
+  }
+  &__modalDisclaimer {
+    color: #404040;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: -.04rem;
+    padding: 0 9rem 7rem;
+    &--link {
+      color: #BD2380;
+      cursor: pointer;
+      text-decoration: underline;
+      &:hover {
+        color: #BD2380;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-
+ .features {
+    &__modal {
+     margin: 2rem;
+    }
+    &__header {
+    margin-bottom: 1rem;
+    }
+    &__benefitsLink {
+      margin-bottom: 6rem;
+    }
+  }
 }
 
 @media screen and (max-width: 414px) { 
@@ -248,16 +343,31 @@
   }
   .features {
     &__header {
-
+      margin-bottom: 5rem;
     }
-    &__listHeader {
-  
+    &__mobileBreak {
+      display: block;
     }
-    &__listText {
-  
+    &__unorderedList {
+      margin-top: 0;
+      padding-left: 5rem;
     }
-    &__disclaimer {
-  
+    &__modal {
+      margin: 2rem;
+      top: 0;
+    }
+    &__modalHeader {
+      margin-bottom: 3rem;
+    }
+    &__modalTwoColumns {
+      flex-direction: column;
+      padding: 0 3rem 3rem;
+    }
+    &__modalSingleColumn {
+      width: 100%;
+    }
+    &__modalDisclaimer {
+      padding: 0 4rem 4rem;
     }
   }
 }

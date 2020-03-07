@@ -18,29 +18,27 @@
     <![endif]-->
   <!-- End of HTML5 Shiv -->
 </head>
-<script>
 
-</script>
 <body>
   <section class="hero">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-5 col-md-offset-1">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
           <h2 class="hero__header">
             Peace of mind in the palm of your hand
           </h2>
           <p class="hero__text">
-            Protecting your mobile device gives you one less thing to worry about
+            Protecting your mobile device with Cyber Security Solution gives you one less thing to worry about 
           </p>
-          <a href="#" class="hero__cta">
+          <a href="https://checkout.web.com/controller.do?path=CyberSecuritySolution&channel=0" class="hero__cta">
             Add to Cart
           </a>
           <p class="hero__disclaimer">
             Starting at only $4.99/mo*
           </p>
         </div>
-        <div class="col-sm-12 col-md-5 col-md-offset-1">
-          <img src="img/hero.png" class="hero__image" alt="mobile graphic with floating icons representing bugs, locks, shields and payment options">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+          <img src="https://www.web.com/content/dam/webdotcom/mobile-security/hero.png" class="hero__image" alt="mobile graphic with floating icons representing bugs, locks, shields and payment options">
         </div>
       </div>
     </div>
@@ -49,10 +47,10 @@
   <section class="mobileSecurity">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-5 col-md-offset-1">
-          <img src="img/mobile.png" class="mobileSecurity__image" alt="mobile graphic with an image stating that no threats were found">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+          <img src="https://www.web.com/content/dam/webdotcom/mobile-security/mobile.png" class="mobileSecurity__image" alt="mobile graphic with an image stating that no threats were found">
         </div>
-        <div class="col-sm-12 col-md-4 col-md-offset-1">
+        <div class="col-sm-12 col-sm-6 col-md-4 col-md-offset-1">
           <h1 class="mobileSecurity__subHeader">
             Mobile Security
           </h1>
@@ -77,14 +75,14 @@
           <div class="row">
             <div class="col-md-12">
               <h3 class="features__header">
-                One solution. Total security. All in one place.
+                One solution. <br class="features__mobileBreak">Total security. <br class="features__mobileBreak">All in one place.
               </h3>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <ul class="features__unorderedList">
                     <li class="features__listItem">
                       <p class="features__listHeader">
@@ -112,7 +110,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <ul class="features__unorderedList">
                     <li class="features__listItem">
                       <p class="features__listHeader">
@@ -135,7 +133,7 @@
                         Safe Browsing
                       </p>
                       <p class="features__listText">
-                        Built-in VPN client
+                        Built-in mobile VPN client
                       </p>
                     </li>
                   </ul>
@@ -143,7 +141,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <p class="features__benefitsLink">
+                  <p class="features__benefitsLink" data-toggle="modal" data-target="#featuresAndBenefitsModal">
                     More Features & Benefits
                   </p>
                 </div>
@@ -155,7 +153,7 @@
                   Save 20% when billed annually
                 </p>
                 <p class="features__priceHeader">
-                  Mobile Device <br>Security Solution
+                  Cyber Security <br>Solution
                 </p>
                 <p class="features__price">
                   $49.90<span class="features__price features__priceYear">/yr</span>
@@ -166,7 +164,7 @@
                 <p class="features__text">
                   $4.99/mo when billed monthly*
                 </p>
-                <a href="#" class="features__cta">
+                <a href="https://checkout.web.com/controller.do?path=CyberSecuritySolution&channel=0" class="features__cta">
                   Add to Cart
                 </a>
               </div>
@@ -175,7 +173,7 @@
           <div class="row">
             <div class="col-md-12">
               <p class="features__disclaimer">
-                *Customers on a monthly billing cycle are billed automatically every four weeks to the payment method on file. This service auto-renews. To cancel, contact us at 1800-862-8921 before the end of the first billing cycle to avoid renewal. <span class="features__disclaimer--link">Billing Details.</span>
+                *Customers on a monthly billing cycle are billed automatically every four weeks to the payment method on file. This service auto-renews. To cancel, contact us at 1800-862-8921 before the end of the first billing cycle to avoid renewal. <span class="features__disclaimer--link" data-toggle="modal" data-target="#billingDetails">Billing Details.</span>
               </p>
             </div>
           </div>
@@ -184,9 +182,84 @@
     </div>
   </section>
 
+  <!-- Features & Benefits Modal -->
+  <div class="modal fade" id="featuresAndBenefitsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-content features__modal">
+      <div>
+        <img src="https://www.web.com/content/dam/webdotcom/mobile-security/x.svg" class="features__modalClose" data-dismiss="modal" aria-label="Close">
+      </div>
+      <div>
+        <h2 class="features__modalHeader">
+          Features & Benefits
+        </h2>
+      </div>
+      <div class="features__modalTwoColumns">
+        <div class="features__modalSingleColumn">
+          <p class="features__modalSubHeader">Device Monitoring</p>
+          <p class="features__modalText">App security and scanning</p>
+          
+          <p class="features__modalSubHeader">Identity Protection</p>
+          <p class="features__modalText">Personalized threat alerts</p>
+          
+          <p class="features__modalSubHeader">Theft Prevention</p>
+          <p class="features__modalText">Lost device location services</p>
+          
+          <p class="features__modalSubHeader">24/7 Assistance</p>
+          <p class="features__modalText">Access to security experts</p>
+
+          <p class="features__modalSubHeader">Safe Browsing</p>
+          <p class="features__modalText">Built-in mobile VPN client</p>
+
+          <p class="features__modalSubHeader">Ongoing Updates</p>
+          <p class="features__modalText">Product upgrades and training</p>
+        </div>
+        <div class="features__modalSingleColumn">
+          <p class="features__modalSubHeader">Privacy Scans</p>
+          <p class="features__modalText">Inspects all apps, sites, and links</p>
+          
+          <p class="features__modalSubHeader">Detailed Reports</p>
+          <p class="features__modalText">Risk information and breach alerts </p>
+          
+          <p class="features__modalSubHeader">Wifi Scanning</p>
+          <p class="features__modalText">Warnings for unsafe wifi networks </p>
+          
+          <p class="features__modalSubHeader">Remote Access</p>
+          <p class="features__modalText">Lock phone and wipe data remotely</p>
+          
+          <p class="features__modalSubHeader">Contact Backup </p>
+          <p class="features__modalText">Saves copy of contacts in the cloud</p>
+          
+          <p class="features__modalSubHeader">Photo & Call Log </p>
+          <p class="features__modalText">Stores photos and call history online</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Billing Details -->
+  <div class="modal fade" id="billingDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-content features__modal">
+      <div>
+        <img src="https://www.web.com/content/dam/webdotcom/mobile-security/x.svg" class="features__modalClose" data-dismiss="modal" aria-label="Close">
+      </div>
+      <div>
+        <h2 class="features__modalHeader">
+          Billing Details
+        </h2>
+        <p class="features__modalDisclaimer">
+          *The Pricing for services on a monthly billing cycle are billed every four weeks. 
+          All services are billed automatically to the payment method on file. 
+          To cancel, contact us at 800-862-8921 before the end of the first billing cycle to avoid renewal. 
+          The pricing for the services reflect the monthly cost for a one-year term, which then auto-renews. 
+          These prices are subject to change at the sole discretion of Web.com. 
+          See our <a href="#" class="features__modalDisclaimer--link">Services Agreement</a> for additional details.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="//www.web.com/etc/designs/web/clientlib-site/third-party/jquery/jquery-1.12.3.min.js"></script>
-  <script>
-  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
