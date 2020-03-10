@@ -135,7 +135,10 @@ body main ul li:before {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 600;
     margin-bottom: 4rem;
+    display: block;
+    cursor: pointer;
     &:hover {
+      color: #BD2380;
       cursor: pointer;
     }
   }
@@ -307,6 +310,9 @@ body main ul li:before {
 }
 
 @media screen and (max-width: 768px) {
+  .interior-page main {
+    padding-top: 6.4rem !important;
+  }
  .features {
     &__modal {
      margin: 2rem;
