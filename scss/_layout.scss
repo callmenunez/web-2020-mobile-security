@@ -105,6 +105,7 @@ body main ul li:before {
   }
   &__unorderedList {
     margin-top: 4rem;
+    padding-inline-start: 40px;
   }
   &__listItem {
     list-style-image: url(https://www.web.com/content/dam/webdotcom/mobile-security/check.svg);
